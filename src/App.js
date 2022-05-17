@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
+//import DigiteSeuNome from './components/DigiteSeuNome';
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 //import ListaProdutos from './components/produtos/ListaProdutos'
 //import UsuarioLogado from './components/UsuarioLogado'
@@ -22,27 +23,28 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <DigiteSeuNome />
+      
       {/*
+      <DigiteSeuNome />
       <ListaProdutosV2 />
-        <ListaProdutos />
-        <UsuarioLogado usuario={{ nome:"Gui", email:"gui@gui.com" }} />
-        <UsuarioLogado usuario={{ nome:"Ana" }} />
-        <UsuarioLogado usuario={{ email:"carlos@empresa.com" }} />
-        <UsuarioLogado usuario={null} />
-        <UsuarioLogado usuario={{}} />
-        <Familia>
-            <Membro nome="Bia" sobrenome="Arruda" />
-            <Membro nome="Carlos" sobrenome="Arruda" />
-        </Familia>
-        <Familia>
-            <Membro nome="Ana" sobrenome="Silva" />
-            <Membro nome="Julia" sobrenome="Silva" />
-            <Membro nome="Gui" sobrenome="Silva" />
-            <Membro nome="Rebeca" sobrenome="Silva" />
-        </Familia>
-        <ParImpar num={3} />
-        <Diferenciar />
+      <ListaProdutos />
+      <UsuarioLogado usuario={{ nome:"Gui", email:"gui@gui.com" }} />
+      <UsuarioLogado usuario={{ nome:"Ana" }} />
+      <UsuarioLogado usuario={{ email:"carlos@empresa.com" }} />
+      <UsuarioLogado usuario={null} />
+      <UsuarioLogado usuario={{}} />
+      <Familia>
+        <Membro nome="Bia" sobrenome="Arruda" />
+        <Membro nome="Carlos" sobrenome="Arruda" />
+      </Familia>
+      <Familia>
+        <Membro nome="Ana" sobrenome="Silva" />
+        <Membro nome="Julia" sobrenome="Silva" />
+        <Membro nome="Gui" sobrenome="Silva" />
+        <Membro nome="Rebeca" sobrenome="Silva" />
+      </Familia>
+      <ParImpar num={3} />
+      <Diferenciar />
       <ContadorV2 />
       <Pai />
       <Pai />
