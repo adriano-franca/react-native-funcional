@@ -1,75 +1,84 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import React from 'react'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
-//import DigiteSeuNome from './components/DigiteSeuNome';
-//import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
-//import ListaProdutos from './components/produtos/ListaProdutos'
-//import UsuarioLogado from './components/UsuarioLogado'
-//import Familia from './components/relacao/Familia'
-//import Membro from './components/relacao/Membro'
-//import ParImpar from './components/ParImpar'
-//import Diferenciar from './components/Diferenciar'
-//import ContadorV2 from './components/contador/ContadorV2';
-//import Pai from './components/indireta/Pai'
-//import Pai from './components/direta/Pai'
-//import Contador from './components/Contador'
-//import Botao from './components/Botao'
-//import Titulo from './components/Titulo'
-//import Aleatorio from './components/Aleatorio'
-//import MinMax from './components/MinMax'
-//import CompPadrao, { Comp1, Comp2 } from './components/Mult'
-//import Primeiro from './components/Primeiro'
+import Quadrado from './components/layout/Quadrado';
+// import DigiteSeuNome from './components/DigiteSeuNome'
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+// import ListaProdutos from './components/produtos/ListaProdutos'
+// import UsuarioLogado from './components/UsuarioLogado'
+// import Familia from './components/relacao/Familia'
+// import Membro from './components/relacao/Membro'
+// import ParImpar from './components/ParImpar'
+// import Diferenciar from './components/Diferenciar'
+// import ContadorV2 from './components/contador/ContadorV2'
+// import Pai from './components/indireta/Pai'
+// import Pai from './components/direta/Pai'
+// import Contador from './components/Contador'
+// import Botao from './components/Botao'
+// import Titulo from './components/Titulo'
+// import Aleatorio from './components/Aleatorio'
+// import MinMax from './components/MinMax'
+// import CompPadrao, { Comp1, Comp2 } from './components/Multi'
+// import Primeiro from './components/Primeiro'
 
-export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      
-      {/*
-      <DigiteSeuNome />
-      <ListaProdutosV2 />
-      <ListaProdutos />
-      <UsuarioLogado usuario={{ nome:"Gui", email:"gui@gui.com" }} />
-      <UsuarioLogado usuario={{ nome:"Ana" }} />
-      <UsuarioLogado usuario={{ email:"carlos@empresa.com" }} />
-      <UsuarioLogado usuario={null} />
-      <UsuarioLogado usuario={{}} />
-      <Familia>
-        <Membro nome="Bia" sobrenome="Arruda" />
-        <Membro nome="Carlos" sobrenome="Arruda" />
-      </Familia>
-      <Familia>
-        <Membro nome="Ana" sobrenome="Silva" />
-        <Membro nome="Julia" sobrenome="Silva" />
-        <Membro nome="Gui" sobrenome="Silva" />
-        <Membro nome="Rebeca" sobrenome="Silva" />
-      </Familia>
-      <ParImpar num={3} />
-      <Diferenciar />
-      <ContadorV2 />
-      <Pai />
-      <Pai />
-      <Contador inicial={100} />
-      <Titulo principal="Cadastro Produto"
-      secundario="Tela de Cadastro do Produto"/>
-      <Aleatorio min={1} max={60}/>
-      <MinMax min={3} max={20}/>
-      <CompPadrao />
-      <Botao />
-      <Comp1 />
-      <Comp2 />
-      <Primeiro />
-      <Text>Só pra ter certeza mesmo!!!!!!</Text>
-      <StatusBar style="auto" />
-      */}
+
+export default () => (
+    <SafeAreaView style={style.App}>
+        <Quadrado cor='#ff801a'/>
+        <Quadrado cor='#50d1f6'/>
+        <Quadrado cor='#dd22c1'/>
+        <Quadrado cor='#8312ed'/>
+        <Quadrado cor='#36c9a7'/>
+        {/*
+        <DigiteSeuNome />
+        <ListaProdutosV2 />
+        <ListaProdutos />
+        <UsuarioLogado usuario={{ nome:"Gui", email:"gui@gui.com" }} />
+        <UsuarioLogado usuario={{ nome:"Ana" }} />
+        <UsuarioLogado usuario={{ email:"carlos@empresa.com" }} />
+        <UsuarioLogado usuario={null} />
+        <UsuarioLogado usuario={{}} />
+        <Familia>
+            <Membro nome="Bia" sobrenome="Arruda" />
+            <Membro nome="Carlos" sobrenome="Arruda" />
+        </Familia>
+        <Familia>
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Julia" sobrenome="Silva" />
+            <Membro nome="Gui" sobrenome="Silva" />
+            <Membro nome="Rebeca" sobrenome="Silva" />
+        </Familia>
+        <ParImpar num={3} />
+        <Diferenciar />
+        <ContadorV2 />
+        <Pai />
+        <Pai />
+        <Contador inicial={100} passo={13} />
+        <Contador />
+        <Botao />
+        <Titulo principal="Cadastro Produto"
+            secundario="Tela de Cadastro do Produto" />
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
+        <MinMax min={3} max={20} />
+        <MinMax min={1} max={94} />
+        <CompPadrao />
+        <Comp1 />
+        <Comp2 />
+        <Primeiro /> */}
     </SafeAreaView>
-  );
-}
+)
 
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
+const style = StyleSheet.create({
+    App: {
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20
+    }
+
 })
