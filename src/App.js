@@ -1,7 +1,8 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 
-import FlexBoxV4 from './components/layout/FlexboxV4'
+import Mega from './components/mega/Mega'
+//import FlexBoxV4 from './components/layout/FlexboxV4'
 //import FlexBoxV3 from './components/layout/FlexboxV3'
 //import FlexBoxV2 from './components/layout/FlexboxV2'
 //import FlexBoxV1 from './components/layout/FlexboxV1'
@@ -27,8 +28,9 @@ import FlexBoxV4 from './components/layout/FlexboxV4'
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <FlexBoxV4 />
+        <Mega qtdeNumeros={12}/>
         {/*
+        <FlexBoxV4 />
         <FlexBoxV3 />
         <FlexBoxV2 />
         <FlexBoxV1 />
